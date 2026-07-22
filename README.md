@@ -2,8 +2,6 @@
 
 ### PauloDeveloper
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Paulob0t&label=Profile views&color=0e75b6&style=flat" alt="Paulob0t" /> </p>
-
 - 🔭 I'm currently working on **Proyectos con varios stacks**
 
 - 🌱 I'm currently learning **Typescript and ruby**
