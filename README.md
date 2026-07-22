@@ -1,22 +1,22 @@
-# Hi 👋, I'm Paulo Essau
+# Hola 👋, soy Paulo Essau
 
 ### PauloDeveloper
 
-- 🔭 I'm currently working on **Proyectos con varios stacks**
+- 🔭 Actualmente estoy trabajando en **Proyectos con varios stacks**
 
-- 🌱 I'm currently learning **Typescript and ruby**
+- 🌱 Actualmente estoy aprendiendo **Typescript y ruby**
 
-- 👯 I'm looking to collaborate on **proyectos de codigo abierto**
+- 👯 Estoy buscando colaborar en **proyectos de código abierto**
 
-- 🤝 I'm looking for help with **FrontEnd**
+- 🤝 Estoy buscando ayuda con **FrontEnd**
 
-- 💬 Ask me about **Java**
+- 💬 Pregúntame sobre **Java**
 
-- 📫 How to reach me **pauloessau32@gmail.com**
+- 📫 Cómo contactarme **pauloessau32@gmail.com**
 
-- ⚡ Fun fact **Soy hacker we**
+- ⚡ Dato curioso **Soy hacker we**
 
-- 👨‍💻 All of my projects are available at **[https://github.com/Paulob0t](https://github.com/Paulob0t)**
+- 👨‍💻 Todos mis proyectos están disponibles en **[https://github.com/Paulob0t](https://github.com/Paulob0t)**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
