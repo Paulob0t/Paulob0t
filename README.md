@@ -16,7 +16,6 @@
 - 📫 Cómo contactarme **pauloessau32@gmail.com**
 
 - ⚡ Dato curioso **Soy hacker we**
-<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/ea44658b-e3a7-4937-b0fd-ff1fc028f159" />
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
