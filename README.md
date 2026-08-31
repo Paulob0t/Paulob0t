@@ -22,7 +22,7 @@
 Me apasiona la arquitectura **Clean Code & MVC**, el diseño de servicios web robustos, la optimización de bases de datos y la creación de interfaces de usuario modernas, intuitivas y fluidas.
 
 - 🏢 **Actualmente trabajando en:** **WiCode** como Desarrollador Full Stack (Lógica Backend, APIs REST & Interfaces Frontend).
-- 🔭 **Proyectos Destacados:** [PauloBot Store](https://github.com/Paulob0t/PauloBotStore) & Ecosistemas Empresariales de WiCode.
+- 🔭 **Proyectos Destacados:** Plataformas Empresariales de WiCode & [PauloBot Store](https://github.com/Paulob0t/PauloBotStore).
 - 🌱 **Extendiendo mi Stack en:** TypeScript, Go, Ruby & DevOps (Docker/Podman).
 - ⚡ **Áreas de Interés:** Arquitectura de Software, Ciberseguridad, Desarrollo Full Stack & Sistemas Vending/IoT.
 - 💬 **Pregúntame sobre:** PHP, JavaScript, MySQL, Refactorización de Código y Arquitectura MVC.
@@ -56,17 +56,17 @@ Me apasiona la arquitectura **Clean Code & MVC**, el diseño de servicios web ro
 
 <table>
   <tr>
-    <td width="33%">
+    <td width="50%">
       <h3 align="center">🏢 WiCode Core Systems</h3>
       <p align="center">
-        Desarrollo e ingeniería Full Stack para plataformas empresariales en WiCode. Arquitectura Backend robusta, consumo de servicios API y dashboards administrativos.
+        Desarrollo e ingeniería Full Stack para plataformas empresariales en WiCode. Arquitectura Backend robusta, integración de APIs REST y dashboards de control Frontend.
       </p>
       <p align="center">
         <img src="https://img.shields.io/badge/Role-Full%20Stack-6366F1?style=flat-square" />
         <img src="https://img.shields.io/badge/Enterprise-WiCode-000000?style=flat-square" />
       </p>
     </td>
-    <td width="33%">
+    <td width="50%">
       <h3 align="center">🤖 PauloBot Store</h3>
       <p align="center">
         Ecosistema inteligente de Vending Machines & POS eCommerce refactorizado en MVC puro, autenticación BCrypt, servidor de imágenes ultra-rápido y cero lag.
@@ -79,16 +79,6 @@ Me apasiona la arquitectura **Clean Code & MVC**, el diseño de servicios web ro
         <a href="https://github.com/Paulob0t/PauloBotStore"><strong>Ver Repositorio »</strong></a>
       </p>
     </td>
-    <td width="33%">
-      <h3 align="center">⚡ WiCode Hardware & IoT</h3>
-      <p align="center">
-        Integración de comunicación serie/MDB con controladores monedero, billetero y dispensadores de cambio con sincronización híbrida Local-Nube.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Hardware-MDB%20%2F%20Serial-F59E0B?style=flat-square" />
-        <img src="https://img.shields.io/badge/Sync-Cloud%20H%C3%ADbrida-10B981?style=flat-square" />
-      </p>
-    </td>
   </tr>
 </table>
 
@@ -97,10 +87,10 @@ Me apasiona la arquitectura **Clean Code & MVC**, el diseño de servicios web ro
 ## 📊 GitHub Stats & Métricas
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Paulob0t&show_icons=true&theme=midnight-purpur&hide_border=true&count_private=true" height="175" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Paulob0t&layout=compact&theme=midnight-purpur&hide_border=true&langs_count=8" height="175" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Paulob0t&theme=midnight_purple" width="100%" alt="GitHub Profile Details" />
   <br /><br />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Paulob0t&theme=midnight-purpur&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Paulob0t&theme=midnight_purple" width="49%" alt="GitHub Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Paulob0t&theme=midnight_purple" width="49%" alt="Most Commit Language" />
 </div>
 
 ---
