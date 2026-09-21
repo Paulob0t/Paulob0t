@@ -22,7 +22,7 @@
 Me apasiona la arquitectura **Clean Code & MVC**, el diseño de servicios web robustos, la optimización de bases de datos y la creación de interfaces de usuario modernas, intuitivas y fluidas.
 
 - 🏢 **Actualmente trabajando en:** **WiCode** como Desarrollador Full Stack (Lógica Backend, APIs REST & Interfaces Frontend).
-- 🔭 **Proyectos Destacados:** Plataformas Empresariales de WiCode & [PauloBot Store](https://github.com/Paulob0t/PauloBotStore).
+- 🔭 **Proyectos Destacados:** Plataformas Empresariales de WiCode & [PuvloBuilder](https://github.com/Paulob0t/PuvloBuilder).
 - 🌱 **Extendiendo mi Stack en:** TypeScript, Go, Ruby & DevOps (Docker/Podman).
 - ⚡ **Áreas de Interés:** Arquitectura de Software, Ciberseguridad, Desarrollo Full Stack & Sistemas Vending/IoT.
 - 💬 **Pregúntame sobre:** PHP, JavaScript, MySQL, Refactorización de Código y Arquitectura MVC.
@@ -67,16 +67,18 @@ Me apasiona la arquitectura **Clean Code & MVC**, el diseño de servicios web ro
       </p>
     </td>
     <td width="50%">
-      <h3 align="center">🤖 PauloBot Store</h3>
+      <h3 align="center">🧩 PuvloBuilder Public</h3>
       <p align="center">
-        Ecosistema inteligente de Vending Machines & POS eCommerce refactorizado en MVC puro, autenticación BCrypt, servidor de imágenes ultra-rápido y cero lag.
+        CMS modular multi-tenant para crear y gestionar mini sitios dinámicos mediante bloques configurables y autenticación independiente. Desarrollado con React, TypeScript, Node.js y MariaDB.
       </p>
       <p align="center">
-        <img src="https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat-square&logo=php&logoColor=white" />
-        <img src="https://img.shields.io/badge/Architecture-MVC-6366F1?style=flat-square" />
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" />
       </p>
       <p align="center">
-        <a href="https://github.com/Paulob0t/PauloBotStore"><strong>Ver Repositorio »</strong></a>
+        <a href="https://github.com/Paulob0t/PuvloBuilder"><strong>Ver Repositorio »</strong></a>
       </p>
     </td>
   </tr>
