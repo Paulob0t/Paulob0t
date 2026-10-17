@@ -842,7 +842,9 @@ body {
 }
 
 .contact-icon {
-  font-size: 1.6rem;
+  font-family: 'Silkscreen', monospace;
+  font-size: 1.2rem;
+  color: var(--accent);
 }
 
 .contact-label {

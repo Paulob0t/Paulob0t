@@ -321,9 +321,9 @@ document.addEventListener('DOMContentLoaded', () => {
       '>> DATA/INFRA : PostgreSQL 16, MariaDB, Redis 7, Prisma, Hibernate, Podman, Systemd'
     ],
     contact: () => [
-      '📧 Email  : pauloessau32@gmail.com',
-      '🐙 GitHub : https://github.com/Paulob0t',
-      '🏢 Work   : Full Stack Developer @ WiCode (México)'
+      '[@] Email  : pauloessau32@gmail.com',
+      '[<>] GitHub : https://github.com/Paulob0t',
+      '[+] Work   : Full Stack Developer @ WiCode (México)'
     ],
     sand: () => {
       spawnSandTetromino();
