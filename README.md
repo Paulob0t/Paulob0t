@@ -1,6 +1,9 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,100:818cf8&height=220&section=header&text=Paulo%20Essau%20%7C%20Paulob0t&fontSize=42&fontAlignY=35&animation=fadeIn&desc=Full%20Stack%20Developer%20at%20WiCode%20%7C%20Software%20Architect&descSize=18&descAlignY=62" width="100%" />
 
+  <a href="https://paulob0t.github.io/Paulob0t/">
+    <img src="https://img.shields.io/badge/Portfolio-Pixel_Architect-00F59B?style=for-the-badge&logo=itchdotio&logoColor=black" />
+  </a>
   <a href="https://github.com/Paulob0t">
     <img src="https://img.shields.io/badge/GitHub-Paulob0t-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>

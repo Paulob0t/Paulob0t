@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="phosphor">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paulo Essau (Paulob0t) — Full Stack & Software Architect</title>
+  <meta name="description" content="Portafolio de Paulo Essau (Paulob0t). Desarrollador Full Stack en WiCode & Arquitecto de Software especializado en sistemas de alta concurrencia, arquitecturas Multi-Tenant y automatización en Linux." />
+  
+  <!-- Google Fonts: Silkscreen (Pixel), VT323 (Pixel Terminal), JetBrains Mono (Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Optional Subtle Scanlines Overlay -->
+  <div class="scanlines" id="scanlines"></div>
+
+  <!-- Top System Bar (Hyprland / Tiling WM inspired) -->
+  <header class="sysbar">
+    <div class="sysbar-left">
+      <span class="workspace-badge active">01:HOME</span>
+      <a href="#proyectos" class="workspace-badge">02:PROJECTS</a>
+      <a href="#stack" class="workspace-badge">03:STACK</a>
+      <a href="#terminal-section" class="workspace-badge">04:TTY</a>
+      <a href="#contacto" class="workspace-badge">05:CONTACT</a>
+    </div>
+
+    <div class="sysbar-center">
+      <span class="sysbar-title">paulobot@arch-hyprland:~/portfolio</span>
+    </div>
+
+    <div class="sysbar-right">
+      <button class="pixel-chip" id="themeBtn" title="Cambiar paleta de color">
+        🎨 THEME: <span id="themeLabel">PHOSPHOR</span>
+      </button>
+      <button class="pixel-chip" id="crtBtn" title="Activar/Desactivar efecto CRT">
+        📺 CRT: <span id="crtLabel">ON</span>
+      </button>
+      <span class="sysbar-clock" id="sysClock">00:00:00</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO SECTION: Split Window Layout -->
+    <section class="hero-grid" id="inicio">
+      <!-- Main Bio Window -->
+      <div class="pixel-window hero-main">
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot amber"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">whoami.sh — Paulo Essau | Paulob0t</span>
+          <span class="window-status">[PID: 2026]</span>
+        </div>
+
+        <div class="window-body hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>FULL STACK DEVELOPER @ WICODE // SOFTWARE ARCHITECT</span>
+          </div>
+
+          <h1 class="pixel-title">
+            PAULO ESSAU
+            <span class="title-sub">&gt; AKA <span class="accent-text">PAULOB0T</span><span class="cursor">_</span></span>
+          </h1>
+
+          <p class="hero-lead">
+            Construyo <strong>sistemas empresariales de alto rendimiento</strong>, motores transaccionales con <strong>cero sobreventas</strong>, plataformas <strong>Multi-Tenant</strong> y herramientas de control remoto en Linux. Sin humo, código limpio y arquitectura sólida.
+          </p>
+
+          <div class="hero-metrics">
+            <div class="metric-box">
+              <span class="metric-val">JAVA 21 / PY / TS</span>
+              <span class="metric-lbl">CORE BACKEND</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">REACT / VUE / NG</span>
+              <span class="metric-lbl">FRONTEND SPAs</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-val">ZERO OVERBOOKING</span>
+              <span class="metric-lbl">CONCURRENCY</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#proyectos" class="pixel-btn primary">
+              [ EXPLORAR PROYECTOS_ ]
+            </a>
+            <a href="https://github.com/Paulob0t" target="_blank" rel="noopener" class="pixel-btn">
+              [ GITHUB // @PAULOB0T ↗ ]
+            </a>
+            <a href="mailto:pauloessau32@gmail.com" class="pixel-btn">
+              [ ENVIAR CORREO ✉ ]
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Sand-Tetris / Physics Mini-Canvas Window -->
+      <div class="pixel-window hero-side">
+        <div class="window-bar">
+          <span class="window-title">sand_physics.exe (C++20 / Qt6 port)</span>
+          <button class="mini-clear-btn" id="clearSandBtn" title="Reiniciar simulación">[CLEAR]</button>
+        </div>
+        <div class="window-body sand-wrapper">
+          <canvas id="sandCanvas" width="120" height="96"></canvas>
+          <div class="sand-overlay-hint">
+            <span>🕹️ CLICK / ARRASTRA PARA SOLTAR ARENA PIXEL</span>
+            <button class="pixel-chip small" id="spawnPieceBtn">+ PIEZA TETRIS</button>
+          </div>
+        </div>
+        <div class="window-footer">
+          <span>AUTÓMATAS CELULARES EN VIVO</span>
+          <span id="sandFps">60 FPS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / CURRENT ROLE BANNER -->
+    <section class="role-banner pixel-window">
+      <div class="role-grid">
+        <div class="role-badge-col">
+          <span class="pixel-tag">ACTUALMENTE EN</span>
+          <h2 class="role-company">🏢 WICODE</h2>
+          <span class="role-location">📍 México • Full Stack Dev</span>
+        </div>
+        <div class="role-desc-col">
+          <p>
+            Ingeniería y arquitectura Full Stack para plataformas empresariales en producción. Diseño de lógica de negocio Backend, integración de APIs REST de alta disponibilidad, optimización de consultas SQL y construcción de paneles de control ejecutivos.
+          </p>
+          <div class="role-tags">
+            <span>#CleanArchitecture</span>
+            <span>#REST_APIs</span>
+            <span>#MultiTenant</span>
+            <span>#DatabaseOptimization</span>
+            <span>#CloudSQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section-block" id="proyectos">
+      <div class="section-header">
+        <div>
+          <span class="section-index">// 02. ARQUITECTURA &amp; CÓDIGO EN PRODUCCIÓN</span>
+          <h2 class="section-title">PROYECTOS DESTACADOS</h2>
+        </div>
+
+        <div class="filter-bar" role="tablist">
+          <button class="filter-btn active" data-filter="all">[ TODOS (6) ]</button>
+          <button class="filter-btn" data-filter="backend">[ CONCURRENCIA &amp; CLOUD ]</button>
+          <button class="filter-btn" data-filter="fullstack">[ MULTI-TENANT &amp; POS ]</button>
+          <button class="filter-btn" data-filter="systems">[ DEVOPS &amp; C++ ]</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- 1. SeatLock -->
+        <article class="pixel-window project-card" data-category="backend">
+          <div class="window-bar">
+            <span class="window-title">01 // seatlock_engine.java</span>
+            <span class="project-type-badge">HIGH CONCURRENCY</span>
+          </div>
+          <div class="window-body project-body">
+            <div class="project-top">
+              <h3 class="project-name">🎟️ SeatLock — Reservation Engine</h3>
+              <p class="project-desc">
+                Motor de reservas concurrentes de alto rendimiento diseñado para garantizar <strong>cero sobreventas (zero overbooking)</strong> bajo ráfagas masivas de tráfico simultáneo. Combina bloqueos pesimistas (<code>SELECT ... FOR UPDATE</code>), control optimista (<code>@Version</code>), Janitor Task automático y UI reactiva en vivo.
+              </p>
+            </div>
+
+            <div class="arch-box">
+              <div class="arch-title">&gt; ARQUITECTURA CLAVE:</div>
+              <pre class="arch-diagram">React 19 ──► Spring Boot 3 (Java 21 Virtual Threads)
+               ├──► @Lock(PESSIMISTIC_WRITE) ──► PostgreSQL 16
+               └──► TTL Hold &amp; Cache ──────────► Redis 7</pre>
+            </div>
+
+            <div class="tech-pills">
+              <span>Java 21 (Loom)</span>
+              <span>Spring Boot 3</span>
+              <span>PostgreSQL 16</span>
+              <span>Redis 7</span>
+              <span>Flyway</span>
+              <span>React 19</span>
+              <span>TypeScript</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Paulob0t/seatlock-back" target="_blank" rel="noopener" class="pixel-link">
+                ⚙️ BACKEND REPO ↗
+              </a>
+              <a href="https://github.com/Paulob0t/seatlock-front" target="_blank" rel="noopener" class="pixel-link">
+                🎨 FRONTEND REPO ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Puvnex CRM -->
+        <article class="pixel-window project-card" data-category="backend">
+          <div class="window-bar">
+            <span class="window-title">02 // puvnex_crm_cloud.py</span>
+            <span class="project-type-badge">ENTERPRISE SUITE</span>
+          </div>
+          <div class="window-body project-body">
+            <div class="project-top">
+              <h3 class="project-name">⚡ Puvnex CRM — Cloud Suite</h3>
+              <p class="project-desc">
+                Suite ejecutiva y motor asíncrono para la administración integral de clientes, infraestructura cloud (dominios y hosting), facturación recurrente, tickets de soporte técnico y portal de autogestión con control de acceso basado en roles (RBAC).
+              </p>
+            </div>
+
+            <div class="arch-box">
+              <div class="arch-title">&gt; ARQUITECTURA CLAVE:</div>
+              <pre class="arch-diagram">Vue 3.5 + Pinia ──► FastAPI Async Router (JWT RBAC)
+                      └──► SQLAlchemy 2.0 ──► MariaDB</pre>
+            </div>
+
+            <div class="tech-pills">
+              <span>Python 3.11+</span>
+              <span>FastAPI</span>
+              <span>SQLAlchemy 2.0</span>
+              <span>Vue 3.5</span>
+              <span>PrimeVue 4</span>
+              <span>TypeScript</span>
+              <span>MariaDB</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Paulob0t/Puvnex_backend" target="_blank" rel="noopener" class="pixel-link">
+                ⚙️ BACKEND REPO ↗
+              </a>
+              <a href="https://github.com/Paulob0t/Puvnex_frontend" target="_blank" rel="noopener" class="pixel-link">
+                🎨 FRONTEND REPO ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. PuvloBuilder -->
+        <article class="pixel-window project-card" data-category="fullstack">
+          <div class="window-bar">
+            <span class="window-title">03 // puvlobuilder_cms.ts</span>
+            <span class="project-type-badge">MULTI-TENANT CMS</span>
+          </div>
+          <div class="window-body project-body">
+            <div class="project-top">
+              <h3 class="project-name">🧩 PuvloBuilder — Dynamic CMS</h3>
+              <p class="project-desc">
+                CMS modular multi-tenant y constructor visual de páginas (Page Builder) mediante bloques configurables. Implementa autenticación JWT independiente de doble nivel (SuperAdmin maestro y Sub-Admin por proyecto/tenant) con almacenamiento físico aislado.
+              </p>
+            </div>
+
+            <div class="arch-box">
+              <div class="arch-title">&gt; ARQUITECTURA CLAVE:</div>
+              <pre class="arch-diagram">Page Builder (React 19) ──► Fastify 5 + Zod Schemas
+                              ├──► Guard Dual JWT (Super/Tenant)
+                              └──► Prisma ORM ──► MariaDB</pre>
+            </div>
+
+            <div class="tech-pills">
+              <span>Node.js</span>
+              <span>Fastify 5</span>
+              <span>Prisma ORM</span>
+              <span>React 19</span>
+              <span>TypeScript</span>
+              <span>Tailwind v4</span>
+              <span>Zod</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Paulob0t/PuvloBuilder_Back" target="_blank" rel="noopener" class="pixel-link">
+                ⚙️ BACKEND REPO ↗
+              </a>
+              <a href="https://github.com/Paulob0t/PuvloBuilder_Front" target="_blank" rel="noopener" class="pixel-link">
+                🎨 FRONTEND REPO ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. AGY Telegram Bot -->
+        <article class="pixel-window project-card" data-category="systems">
+          <div class="window-bar">
+            <span class="window-title">04 // agy_remote_devops.py</span>
+            <span class="project-type-badge">DEVOPS &amp; AI OPS</span>
+          </div>
+          <div class="window-body project-body">
+            <div class="project-top">
+              <h3 class="project-name">🤖 AGY Remote DevOps Control</h3>
+              <p class="project-desc">
+                Centro de mando remoto en Linux (Wayland/Hyprland) y orquestador de Antigravity CLI vía Telegram. Gestiona colas concurrentes FIFO con aislamiento de árboles de procesos (<code>os.killpg</code>), túneles Cloudflare al vuelo, servicios fullstack + Cloud SQL Proxy y capturas con <code>grim</code>.
+              </p>
+            </div>
+
+            <div class="arch-box">
+              <div class="arch-title">&gt; ARQUITECTURA CLAVE:</div>
+              <pre class="arch-diagram">Telegram API ──► Asyncio FIFO Queue (Process Groups)
+                   ├──► AGY CLI JSON Stream + State Persist
+                   └──► Cloudflared Tunnel / DBus / Grim</pre>
+            </div>
+
+            <div class="tech-pills">
+              <span>Python Asyncio</span>
+              <span>Telegram Bot API</span>
+              <span>Cloudflare Tunnels</span>
+              <span>Linux IPC / Systemd</span>
+              <span>Wayland / Hyprland</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Paulob0t/bot_telegram_agy" target="_blank" rel="noopener" class="pixel-link">
+                🚀 VER REPOSITORIO ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. PauloBot Store v2 -->
+        <article class="pixel-window project-card" data-category="fullstack">
+          <div class="window-bar">
+            <span class="window-title">05 // paulobot_store_v2.py</span>
+            <span class="project-type-badge">VENDING &amp; POS</span>
+          </div>
+          <div class="window-body project-body">
+            <div class="project-top">
+              <h3 class="project-name">🛒 PauloBot Store v2 — Vending POS</h3>
+              <p class="project-desc">
+                Evolución del ecosistema inteligente de máquinas expendedoras y comercio automatizado 24/7. Migrado a una arquitectura desacoplada con conversión automática de imágenes a WebP, contratos estrictos OpenAPI 3.0 con generación de cliente tipado y despliegue en contenedores Podman.
+              </p>
+            </div>
+
+            <div class="arch-box">
+              <div class="arch-title">&gt; ARQUITECTURA CLAVE:</div>
+              <pre class="arch-diagram">Angular 22 (ng-openapi-gen) ──► FastAPI (Python 3.12)
+                                  ├──► Pillow WebP Engine
+                                  └──► PostgreSQL 16 (Podman)</pre>
+            </div>
+
+            <div class="tech-pills">
+              <span>Python 3.12</span>
+              <span>FastAPI</span>
+              <span>Angular 22</span>
+              <span>Tailwind v4</span>
+              <span>PostgreSQL 16</span>
+              <span>OpenAPI CodeGen</span>
+              <span>Podman</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Paulob0t/PauloBotStore_Back" target="_blank" rel="noopener" class="pixel-link">
+                ⚙️ BACKEND REPO ↗
+              </a>
+              <a href="https://github.com/Paulob0t/PauloBotStore_Front" target="_blank" rel="noopener" class="pixel-link">
+                🎨 FRONTEND REPO ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Tetris-Qt6 -->
+        <article class="pixel-window project-card" data-category="systems">
+          <div class="window-bar">
+            <span class="window-title">06 // sand_tetris_qt6.cpp</span>
+            <span class="project-type-badge">C++20 ENGINE</span>
+          </div>
+          <div class="window-body project-body">
+            <div class="project-top">
+              <h3 class="project-name">🎮 Tetris-Qt6 &amp; Sand Physics</h3>
+              <p class="project-desc">
+                Motor de juego nativo a 60 FPS desarrollado en C++20 y Qt 6. Incluye tanto el modo competitivo oficial (7-Bag Randomizer, Lock Delay, Ghost Piece, Hold) como <strong>Modo Arena (Sand Tetris)</strong> con física de autómatas celulares, sistema de partículas y <em>screen shake</em>.
+              </p>
+            </div>
+
+            <div class="arch-box">
+              <div class="arch-title">&gt; ARQUITECTURA CLAVE:</div>
+              <pre class="arch-diagram">GameLoop (60 FPS QTimer) ──► Cellular Automata Grid
+                              ├──► BFS Flood-Fill Line Clear
+                              └──► Particle &amp; Shake Renderer</pre>
+            </div>
+
+            <div class="tech-pills">
+              <span>C++20</span>
+              <span>Qt 6</span>
+              <span>CMake</span>
+              <span>Cellular Automata</span>
+              <span>Particle System</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Paulob0t/Tetris-Qt6" target="_blank" rel="noopener" class="pixel-link">
+                🕹️ VER REPOSITORIO ↗
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TECH STACK MATRIX SECTION -->
+    <section class="section-block" id="stack">
+      <div class="section-header">
+        <div>
+          <span class="section-index">// 03. ARSENAL TÉCNICO</span>
+          <h2 class="section-title">TECH STACK &amp; HERRAMIENTAS</h2>
+        </div>
+      </div>
+
+      <div class="stack-grid">
+        <div class="pixel-window stack-card">
+          <div class="window-bar">
+            <span class="window-title">[A] BACKEND &amp; ARQUITECTURA</span>
+          </div>
+          <div class="window-body">
+            <ul class="stack-list">
+              <li>
+                <span class="stack-item-name">Python (FastAPI / SQLAlchemy)</span>
+                <span class="pixel-bar" data-level="95">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">TypeScript / Node.js (Fastify / Express)</span>
+                <span class="pixel-bar" data-level="95">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">Java 21 (Spring Boot 3 / Virtual Threads)</span>
+                <span class="pixel-bar" data-level="88">████████░░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">PHP 8+ &amp; Ruby on Rails 8 (MVC)</span>
+                <span class="pixel-bar" data-level="90">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">C++20 (Qt 6 / CMake) &amp; Go</span>
+                <span class="pixel-bar" data-level="80">████████░░</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pixel-window stack-card">
+          <div class="window-bar">
+            <span class="window-title">[B] FRONTEND &amp; INTERFACES</span>
+          </div>
+          <div class="window-body">
+            <ul class="stack-list">
+              <li>
+                <span class="stack-item-name">React 19 + TypeScript + Vite</span>
+                <span class="pixel-bar" data-level="95">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">Vue 3.5 + Pinia + PrimeVue</span>
+                <span class="pixel-bar" data-level="90">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">Angular 22 Standalone + OpenAPI Gen</span>
+                <span class="pixel-bar" data-level="88">████████░░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">Tailwind CSS v4 &amp; Sistemas de Diseño</span>
+                <span class="pixel-bar" data-level="95">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">PWAs / Web Components / Android (Kotlin)</span>
+                <span class="pixel-bar" data-level="85">████████░░</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pixel-window stack-card">
+          <div class="window-bar">
+            <span class="window-title">[C] DATOS, CONCURRENCIA &amp; DEVOPS</span>
+          </div>
+          <div class="window-body">
+            <ul class="stack-list">
+              <li>
+                <span class="stack-item-name">PostgreSQL 16 &amp; MariaDB / MySQL</span>
+                <span class="pixel-bar" data-level="95">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">Redis 7, Bloqueos Pesimistas/Optimistas</span>
+                <span class="pixel-bar" data-level="90">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">Prisma ORM, Hibernate JPA &amp; Flyway</span>
+                <span class="pixel-bar" data-level="92">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">Linux (Arch / NixOS / Hyprland / Systemd)</span>
+                <span class="pixel-bar" data-level="95">█████████░</span>
+              </li>
+              <li>
+                <span class="stack-item-name">Podman / Docker / Cloudflare Tunnels</span>
+                <span class="pixel-bar" data-level="88">████████░░</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SECTION -->
+    <section class="section-block" id="terminal-section">
+      <div class="section-header">
+        <div>
+          <span class="section-index">// 04. CONSOLA INTERACTIVA</span>
+          <h2 class="section-title">PAULOBOT SHELL v2.6</h2>
+        </div>
+        <div class="terminal-quick-cmds">
+          <span>COMANDOS RÁPIDOS:</span>
+          <button class="pixel-chip cmd-trigger" data-cmd="neofetch">neofetch</button>
+          <button class="pixel-chip cmd-trigger" data-cmd="projects">projects</button>
+          <button class="pixel-chip cmd-trigger" data-cmd="stack">stack</button>
+          <button class="pixel-chip cmd-trigger" data-cmd="contact">contact</button>
+          <button class="pixel-chip cmd-trigger" data-cmd="clear">clear</button>
+        </div>
+      </div>
+
+      <div class="pixel-window terminal-window">
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot amber"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">kitty — paulobot@archlinux: ~/portfolio (zsh)</span>
+          <span class="window-status">[UTF-8]</span>
+        </div>
+
+        <div class="terminal-output" id="termOutput">
+          <div class="term-line muted">Bienvenido a Paulob0t Interactive Shell (v2.6.0-arch).</div>
+          <div class="term-line muted">Escribe <span class="accent-text">'help'</span> o haz clic en los botones de arriba para inspeccionar mi perfil.</div>
+          <br />
+        </div>
+
+        <form class="terminal-input-row" id="termForm" autocomplete="off">
+          <span class="term-prompt">paulobot@wicode:~$</span>
+          <input
+            type="text"
+            id="termInput"
+            class="term-input"
+            placeholder="Escribe un comando (help, neofetch, projects, stack, contact)..."
+            aria-label="Comando de terminal"
+          />
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER SECTION -->
+    <section class="section-block" id="contacto">
+      <div class="pixel-window contact-window">
+        <div class="window-bar">
+          <span class="window-title">05 // iniciar_conexion.sh</span>
+          <span class="window-status">[STATUS: ONLINE]</span>
+        </div>
+        <div class="window-body contact-body">
+          <div class="contact-text">
+            <span class="section-index">// ¿LISTO PARA CONSTRUIR ALGO GRANDE?</span>
+            <h2 class="contact-heading">HABLEMOS DE ARQUITECTURA, CÓDIGO O PROYECTOS</h2>
+            <p>
+              Si buscas un Desarrollador Full Stack o Arquitecto de Software que domine desde el diseño de bases de datos transaccionales y APIs de alta concurrencia hasta interfaces modernas en React, Vue o Angular, mándame mensaje directo.
+            </p>
+          </div>
+
+          <div class="contact-cards">
+            <a href="mailto:pauloessau32@gmail.com" class="contact-card">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <div class="contact-label">EMAIL DIRECTO</div>
+                <div class="contact-val">pauloessau32@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/Paulob0t" target="_blank" rel="noopener" class="contact-card">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <div class="contact-label">GITHUB PROFILE</div>
+                <div class="contact-val">github.com/Paulob0t</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pixel-footer">
+    <div class="container footer-inner">
+      <span>© 2026 PAULO ESSAU (PAULOB0T) // HECHO A MANO CON PIXELES &amp; CÓDIGO PURO</span>
+      <span>ARCH LINUX • HYPRLAND • WICODE</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
