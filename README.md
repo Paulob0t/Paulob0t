@@ -1,18 +1,14 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d11,100:12161f&height=180&section=header&text=PAULO%20ESSAU%20//%20PAULOB0T&fontSize=38&fontColor=00f59b&fontAlignY=42&desc=Full%20Stack%20Developer%20at%20WiCode%20%7C%20Backend%20%26%20Systems%20Architecture&descSize=16&descColor=eef2f6&descAlignY=68" width="100%" alt="Paulo Essau // Paulob0t" />
+  <img src="./assets/banner.svg" width="100%" alt="Paulo Essau // Paulob0t" />
 
-  <br />
+  <br /><br />
 
-  <a href="https://paulob0t.github.io/Portafoli_PauloEssau/">
-    <img src="https://img.shields.io/badge/PORTFOLIO-PIXEL_ARCHITECT-00f59b?style=for-the-badge&logo=itchdotio&logoColor=0b0d11" alt="Portfolio" />
-  </a>
-  <a href="https://github.com/Paulob0t">
-    <img src="https://img.shields.io/badge/GITHUB-PAULOB0T-12161f?style=for-the-badge&logo=github&logoColor=00f59b" alt="GitHub" />
-  </a>
-  <a href="mailto:pauloessau32@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-PAULOESSAU32%40GMAIL.COM-ffb000?style=for-the-badge&logo=gmail&logoColor=0b0d11" alt="Email" />
-  </a>
-  <img src="https://img.shields.io/badge/WICODE-FULL_STACK_DEV-181d29?style=for-the-badge&logo=linux&logoColor=00f59b" alt="Role" />
+  <p align="center">
+    <a href="https://paulob0t.github.io/Portafoli_PauloEssau/"><img src="https://img.shields.io/badge/PORTFOLIO-PIXEL_ARCHITECT-00f59b?style=for-the-badge&logo=itchdotio&logoColor=0b0d11" alt="Portfolio" /></a>&nbsp;
+    <a href="https://github.com/Paulob0t"><img src="https://img.shields.io/badge/GITHUB-PAULOB0T-12161f?style=for-the-badge&logo=github&logoColor=00f59b" alt="GitHub" /></a>&nbsp;
+    <a href="mailto:pauloessau32@gmail.com"><img src="https://img.shields.io/badge/EMAIL-PAULOESSAU32%40GMAIL.COM-ffb000?style=for-the-badge&logo=gmail&logoColor=0b0d11" alt="Email" /></a>&nbsp;
+    <img src="https://img.shields.io/badge/WICODE-FULL_STACK_DEV-181d29?style=for-the-badge&logo=linux&logoColor=00f59b" alt="Role" />
+  </p>
 </div>
 
 <br />
@@ -194,9 +190,4 @@ En mi trabajo diario priorizo la integridad de datos en PostgreSQL y MariaDB (bl
   <br /><br />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Paulob0t&theme=tokyonight" width="49%" alt="GitHub Stats" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Paulob0t&theme=tokyonight" width="49%" alt="Most Commit Language" />
-</div>
-
-<div align="center">
-  <br />
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0b0d11,100:12161f&height=40&section=footer" width="100%" alt="Footer" />
 </div>
